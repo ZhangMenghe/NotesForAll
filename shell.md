@@ -1,3 +1,11 @@
+# bang
+- Login to your account on the cluster's login server node (not the front end server node) by typing:
+```sh
+ssh YourADLogin@ccom-bang-login.ucsd.edu
+```
+
+# [Sun Grid Engine Reference](http://docs.oracle.com/cd/E19279-01/820-3257-12/n1ge.html#50577430_65574)
+
 # Secure Copy (scp)
 - Copy the file "foobar.txt" from a remote host to the local host
 ```sh
