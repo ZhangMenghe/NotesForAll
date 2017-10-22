@@ -3,6 +3,9 @@ export PUB=/share/class/public/cse260-fa17  # on bang <br>
 export PUB=/share/public/cse260-fa17            # on sorken<br>
 export PUB=/share/class/public/cse260-fa17 # on AWS EC2 (amazon)<br>
 
+#sorken<br>
+ssh user@sorken.ucsd.edu<br>
+
 # bang
 - Login to your account on the cluster's login server node (not the front end server node) by typing:
 ```sh
