@@ -1,7 +1,7 @@
-# CSE 260 PUB
-export PUB=/share/class/public/cse260-fa17  # on bang
-export PUB=/share/public/cse260-fa17            # on sorken
-export PUB=/share/class/public/cse260-fa17 # on AWS EC2 (amazon)
+# CSE 260 PUB<br>
+export PUB=/share/class/public/cse260-fa17  # on bang <br>
+export PUB=/share/public/cse260-fa17            # on sorken<br>
+export PUB=/share/class/public/cse260-fa17 # on AWS EC2 (amazon)<br>
 
 # bang
 - Login to your account on the cluster's login server node (not the front end server node) by typing:
