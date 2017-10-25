@@ -3,7 +3,7 @@ export PUB=/share/class/public/cse260-fa17  # on bang <br>
 export PUB=/share/public/cse260-fa17            # on sorken<br>
 export PUB=/share/class/public/cse260-fa17 # on AWS EC2 (amazon)<br>
 
-#sorken<br>
+# sorken
 ssh user@sorken.ucsd.edu<br>
 
 # bang
