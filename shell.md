@@ -4,9 +4,9 @@ export PUB=/share/public/cse260-fa17            # on sorken<br>
 export PUB=/share/class/public/cse260-fa17 # on AWS EC2 (amazon)<br>
 
 # sorken
-- Login
+- Login<br>
 ssh user@sorken.ucsd.edu<br>
-- Require GPU
+- Require GPU<br>
 srun -t 00:15:00  --partition=INTERACTIVE --ntasks=1 --gres=gpu:1 -X --pty /bin/bash -l<br>
 srun --gres=gpu:1 ./mmpy
 
