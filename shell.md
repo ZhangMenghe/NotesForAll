@@ -4,7 +4,11 @@ export PUB=/share/public/cse260-fa17            # on sorken<br>
 export PUB=/share/class/public/cse260-fa17 # on AWS EC2 (amazon)<br>
 
 # sorken
+- Login
 ssh user@sorken.ucsd.edu<br>
+- Require GPU
+srun -t 00:15:00  --partition=INTERACTIVE --ntasks=1 --gres=gpu:1 -X --pty /bin/bash -l<br>
+srun --gres=gpu:1 ./mmpy
 
 # bang
 - Login to your account on the cluster's login server node (not the front end server node) by typing:
