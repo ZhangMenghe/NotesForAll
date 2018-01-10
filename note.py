@@ -36,7 +36,9 @@ def buildInFunction():
     # zipList1 equals to zipList2  [(1, 4), (2, 5), (3, 6)]
     zipList[::-1] # equals to zipList.reverse() the third parameter means step
     zipList[::2] #>>> L = range(10)>>> L[::2][0, 2, 4, 6, 8]
-
+def getCurrentWorkingDir():
+    import os
+    print os.getcwd()
 def main():
     numpyFunctions()
     buildInFunction()
