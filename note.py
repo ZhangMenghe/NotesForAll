@@ -39,6 +39,7 @@ def buildInFunction():
 def getCurrentWorkingDir():
     import os
     print os.getcwd()
+    os.chdir('/root/....')
 def main():
     numpyFunctions()
     buildInFunction()
