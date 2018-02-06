@@ -40,6 +40,8 @@ def buildInFunction():
         #    item = L[i]
     x = [1,2,3]
     y = [4,5,6]
+    # length of list
+    len(x)
     xy = np.array([x,y])
     zipped = zip(x, y)
     zipList1 = list(zipped)
@@ -55,6 +57,16 @@ def getCurrentWorkingDir():
     import os
     print os.getcwd()
     os.chdir('/root/....')
+def fileIO():
+    try:
+        fp = open(path, 'r')
+        filenameSet = fp.readlines()
+    finally:
+        fp.close()
+    # with open() as fp
+    for idx, file in enumerate(filenameSet):
+        split_items = file.split('/')
+        addr = path + '/'.join(p for p in split_items[:4]) + '/.txt'
 def main():
     numpyFunctions()
     buildInFunction()
