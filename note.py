@@ -29,6 +29,8 @@ def numpyFunctions():
     divide_res = np.divide(A,B)
     # Element-wise multiplication
     mul_res = np.multiply(A,B)
+    # element wise maximum
+    array = np.maximum(1, array)
 def buildInFunction():
     predictLabel = max(recorder, key=recorder.get)
     for idx, item in enumerate(L):
