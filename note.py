@@ -53,10 +53,22 @@ def scipyFunctions():
     # Equal to conv2(x,y,mode="same") in Matlab, 这么麻烦是因为matlab和python的center focus 不同，若mode ="full"就不需要这样了
     # filter2 -> conv2(x, rot90(y))
     convolve_res = np.rot90(signal.convolve2d(np.rot90(x, 2), np.rot90(y, 2), mode=mode), 2)
-def getCurrentWorkingDir():
+def workingDir():
+    # get current working directory
     import os
     print os.getcwd()
     os.chdir('/root/....')
+    # list everything in directory(include file and directories) and want to get all filenames
+    from os import listdir
+    from os.path import isfile, join
+    onlyfileNameList = [f for f in listdir(path) if isfile(join(path, f))]
+    # yield two lists : files and dirs separately
+    from os import walk
+    f = []
+    dir = []
+    for (dirpath, dirnames, filenames) in walk(path):
+        f.extend(filenames)
+        dir.extend(dirnames)
 def fileIO():
     try:
         fp = open(path, 'r')
