@@ -49,6 +49,9 @@ def buildInFunction():
     # zipList1 equals to zipList2  [(1, 4), (2, 5), (3, 6)]
     zipList[::-1] # equals to zipList.reverse() the third parameter means step
     zipList[::2] #>>> L = range(10)>>> L[::2][0, 2, 4, 6, 8]
+    
+    # format output
+    print("=====x={}, y={}=====".format(x,y))
 def scipyFunctions():
     # Equal to conv2(x,y,mode="same") in Matlab, 这么麻烦是因为matlab和python的center focus 不同，若mode ="full"就不需要这样了
     # filter2 -> conv2(x, rot90(y))
