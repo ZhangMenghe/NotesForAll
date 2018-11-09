@@ -9,3 +9,9 @@ __ONLY WORKS ON CMD NOT POWERSHELL__
 - remove envs
 `conda remove --name leavesEnv --all`
 - jupyter should be installed in a specific env
+
+## tensorflow
+- Install
+`pip install tensorflow` or `pip install tensorflow-gpu`
+- Test if GPU available
+`sess = tf.Session(config=tf.ConfigProto(log_device_placement=True))`
