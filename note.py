@@ -4,7 +4,15 @@ class showClass(object):
     def __init__(self, arg):
         super(, self).__init__()
         self.arg = arg
-        
+def parse_arguments():
+    global data_path
+    parser = argparse.ArgumentParser(description = 'Initilization')
+    parser.add_argument('--path', metavar = 'PATH')
+    args = parser.parse_args()
+    if(args.path):
+        data_path = args.path
+    print(data_path)
+    
 def numpyFunctions():
     class1_ind = np.where(X[:, 0] <= threshold)
     class1_ind = X[:, 0] <= threshold
